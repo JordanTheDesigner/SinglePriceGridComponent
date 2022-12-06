@@ -1,0 +1,150 @@
+body{
+display: flex;
+flex-direction: column;
+align-items:center;
+justify-content: center;
+height: 100vh;
+font-family: 'Karla', sans-serif;
+font-size: 16px;
+font-weight: 400;
+color:hsl(234, 12%, 34%);
+background-color: hsl(0, 0%, 98%);
+}
+
+h1{
+  color:hsl(179, 62%, 43%);
+}
+
+h2{
+  color:hsl(71, 73%, 54%);
+  font-size:20px;
+  margin-bottom: 0px;
+}
+
+h3{
+  color:#fff;
+  font-weight: 700;
+}
+
+button{
+  width:100%;
+  padding:18px 0;
+  border:0px;
+  color:#fff;
+  background-color:hsl(71, 73%, 54%);
+  border-radius: 5px;
+  font-weight: 700;
+  font-size:14px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+
+
+#MainContainer{
+
+}
+
+#ContentContainer{
+  width:633px;
+  height:475px;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 31%) 0px 28px 46px 0px;
+  overflow: hidden;
+}
+
+/* Top Container*/
+
+#TopContainer{
+  padding:14px 40px 20px 40px;
+}
+
+#TopContainer p{
+  color:hsl(218, 22%, 67%);
+  margin-top:15px;
+  line-height: 24px;
+}
+
+/* Bottom Container */
+
+#BottomContainer{
+  display: flex;
+  flex-direction: row;
+  /*align-items:center;*/
+  justify-content:flex-start;
+  height: 100%;
+}
+
+
+/* Left Container */
+
+#LeftContainer{
+    background-color:hsl(179, 62%, 43%);
+    color:hsl(204, 43%, 93%);
+}
+
+#PriceLine{
+    color:hsla(204, 43%, 93%,0.7);
+}
+
+#PriceLine span{
+  font-size:30px;
+  font-weight: 700;
+  color:hsl(204, 43%, 93%);
+}
+
+
+#RightContainer{
+  background-color:hsla(179, 62%, 43%,0.8);
+}
+
+#LeftContainer,#RightContainer{
+  padding:20px 35px 40px 35px;
+  width:100%;
+}
+
+/* Right Container */
+
+#RightContainer ul{
+  padding-left:0px;
+  color:hsla(204, 43%, 93%,0.8);
+  font-weight:400;
+  font-size: 13px;
+}
+
+#RightContainer li{
+  list-style: none;
+  padding-left:0px;
+  margin:5px 0;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 480px) {
+
+  h1{
+    font-size:26px;
+  }
+
+  h2{
+    font-size: 16px;
+  }
+
+  #ContentContainer{
+    width:100%;
+    height: 100%;
+  }
+
+  #BottomContainer{
+    display: flex;
+    flex-direction: column;
+    /*align-items:center;*/
+    justify-content:flex-start;
+    height: 100%;
+  }
+
+  #LeftContainer, #RightContainer {
+    padding: 20px 35px 40px 35px;
+    width: inherit;
+}
+
+}
